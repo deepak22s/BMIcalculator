@@ -27,13 +27,13 @@ document.getElementById("Height").addEventListener("keydown", function (event) {
     document.getElementById('BMI').textContent = "Your BMI is "+BMI;
     let category = "";
     if (BMI < 18.5) {
-      category = " you are Underweight.";
+      category = "Your BMI indicates that you are Underweight.";
     } else if (BMI >= 18.5 && BMI < 24.9) {
-      category = "you BMI is pretty Normal.";
+      category = "Your BMI indicates a good health.";
     } else if (BMI >= 25 && BMI < 29.9) {
-      category = "you are Overweight.";
+      category = "Your BMI indicates you are Overweight.";
     } else {
-      category = "you are Obese.";
+      category = "Your BMI indicates you are Obese.";
     }
   document.getElementById('BMIDES').textContent = category;
 
