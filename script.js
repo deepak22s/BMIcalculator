@@ -22,7 +22,7 @@ document.getElementById("Height").addEventListener("keydown", function (event) {
         return;
       }
 
-    let BMI = Weight / (Height_m * Height_m);
+    let BMI = Math.floor(Weight / (Height_m * Height_m));
 
     document.getElementById('BMI').textContent = "Your BMI is "+BMI;
     let category = "";
